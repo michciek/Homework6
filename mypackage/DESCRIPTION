@@ -1,0 +1,14 @@
+Package: mypackage
+Type: Package
+Title: Homework 6
+Version: 1.0
+Date: 2015-01-28
+Author: Michal Pawlowski
+Maintainer: Michal Pawlowski <michciek@gmail.com>
+Description: The 'mode' function determines the most frequently occurring value in a numeric vector (mode)
+License: GPL (>= 2)
+Imports: Rcpp 
+LinkingTo: Rcpp
+Suggests: testthat,
+    knitr
+VignetteBuilder: knitr

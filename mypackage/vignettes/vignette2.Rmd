@@ -1,0 +1,33 @@
+---
+title: "Package's examples"
+author: "Michał Pawłowski"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+Below there is a comparison between the 'mode' function and a function calculating the mode written in 'pure' R.
+
+
+```{r}
+Mode_R <- function(x) {
+     ux <- unique(x)
+     ux[which.max(tabulate(match(x, ux)))]
+ }
+library(mypackage)
+mode(c(1,2,3,3))
+Mode_R(c(1,2,3,3))
+mode(c(1,2,3,4))
+Mode_R(c(1,2,3,4))
+mode(c(1,2,4.5,pi,pi))
+Mode_R(c(1,2,4.5,pi,pi))
+mode(c(1,2,4.5,Inf,Inf))
+Mode_R(c(1,2,4.5,Inf,Inf))
+mode(c(TRUE,TRUE,FALSE))
+Mode_R(c(TRUE,TRUE,FALSE))
+mode(c(NaN,NaN,NaN,3,3,2))
+Mode_R(c(NaN,NaN,NaN,3,3,2))
+```
+

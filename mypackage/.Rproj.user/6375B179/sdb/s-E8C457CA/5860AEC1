@@ -1,0 +1,17 @@
+{
+    "contents" : "expect_that(mode(c(1,1,2)), equals(1))\nexpect_that(mode(c(1,2,3,4)), equals(1))\nexpect_that(mode(c(1,2,4.5,pi,pi)), equals(pi))\nexpect_that(mode(c(1,2,4.5,Inf,Inf)), equals(Inf))\nexpect_that(mode(c()), throws_error())\nexpect_that(mode(c(NA)), throws_error())\nexpect_that(mode(c(TRUE,TRUE,FALSE)), equals(1))\nexpect_that(mode(c(1,2,NA)), throws_error())\nexpect_that(mode(c(NaN,NaN,NaN,3,3,2)), equals(3))\nexpect_that(mode(\"aaa\"), throws_error())\n",
+    "created" : 1422385483082.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "176802142",
+    "id" : "5860AEC1",
+    "lastKnownWriteTime" : 1422388682,
+    "path" : "C:/Users/Michał/Dropbox/Studia_doktoranckie/Przedmioty/Advanced Data Analysis Software Development with R/mypackage/tests/testthat/test-all.R",
+    "project_path" : "tests/testthat/test-all.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
